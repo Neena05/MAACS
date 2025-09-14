@@ -116,7 +116,7 @@ statement1 <- function(dataset) {
   
   # Plot Data
   plot(age_sim, fev1_sim,
-       main = "Hypothetical: Strong Positive Relationship",
+       main = "Hypothetical Plot",
        xlab = "Age (years)", ylab = "FEV1",
        pch = 19, col = "darkgreen")
   abline(lm(fev1_sim ~ age_sim), col = "red", lwd=2)
@@ -140,7 +140,7 @@ statement2(dataset)
 ```
 
 
-```{r}
+```{r, warning=FALSE}
 ## Function for supporting premise statement 3
 statement3 <- function(dataset) {
 
