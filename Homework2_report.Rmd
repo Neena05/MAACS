@@ -58,7 +58,7 @@ How much does FEV1 change for a 1-year increase in the child's age?
 ## Add your code here
 model <- lm(dataset$fev1 ~ dataset$age)
 fev1_change <- model$coefficients[2]
-
+fev1_change
 ```
 
 
@@ -74,6 +74,12 @@ NOTE: At least one supporting premise should use a plot.
 
 ```{r}
 ## Add your code here
+plot(dataset$age, dataset$fev1)
+
+fivenum(dataset$age)
+
+fivenum(dataset$fev1)
+
 
 ```
 
